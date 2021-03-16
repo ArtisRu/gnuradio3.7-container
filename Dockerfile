@@ -33,6 +33,3 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 COPY run.sh /run.sh
 
 RUN chmod +x /usr/local/setup_env.sh /run.sh
-
-RUN echo "/usr/local/lib" >> /etc/ld.so.conf
-RUN ldconfig
